@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<style>
+label{
+    width: auto;
+    display: inline-block;
+    gap: 10px;
+    margin: 10px 0 0;
+    font-weight: 600;
+}
+select{
+    width: 450px;
+    height: 30px;
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    /* height: 100px; */
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.input_gender{
+    margin-left: 20px;
+}
+</style>
+<body>
+    <header>
+        <h1>Market Research Survey</h1>
+    </header>
+    <p>Please take a few minutes to answer the following questions</p>
+
+    <article>
+        <label for="choose_age">What is age range</label><br>
+     <select name="choose_age" id="choose_age">
+         <option >Under 18</option>
+         <option>18-24</option>
+         <option>25-34</option>
+         <option>35-44</option>
+         <option>45-54</option>
+         <option>55-64</option>
+         <option>65 or Above</option>
+        </select>
+    </article>
+    <article>
+        <label for="choose_price">What is your yearly income range</label><br>
+        <select name="choose_price" id="choose_price">
+            <option>Under $25,000</option>
+            <option>$25,000-$50,000</option>
+            <option>$50,000-$75,000</option>
+            <option>$75,000-$100,000</option>
+            <option>Over $100,000</option>
+    </select>
+    </article>
+    <article>
+        <label for="choose_gender">Gender:</label><br>
+        <input type="radio" checked value="Male" id="choose_gender">Male<br>
+        <input type="radio"  value="Female" id="choose_gender">Female<br>
+        <input type="radio"  value="Other" id="choose_gender">Other<br>
+        <input type="input"  id="choose_gender" class="input_gender">
+        
+    </article>
+    <article>
+        <label for="choose_product">Which of the following products have you purchased in the past 6 months?</label><br>
+        <input type="checkbox"  value="Smartphone" id="choose_product">Smartphone<br>
+        <input type="checkbox"  value="Tablet" id="choose_product">Tablet<br>
+        <input type="checkbox"  value="Laptop" id="choose_product">Laptop<br>
+        </article>
+        <article>
+            <label for="choose_time">Now when you are thinking about buying a new product, how much time do you spend on researching the product online?</label><br>
+            <input type="radio"  value="Daily" id="choose_time">Daily<br>
+            <input type="radio"  value="Weekly" id="choose_time">Weekly<br>
+            <input type="radio"  value="Monthly" id="choose_time">Monthly<br>
+        </article>
+        <article>
+            <label for="input_money">What would you be willing to pay for ?</label><br>
+            <span>$</span><input type="text"  value="0" min="0"  id="input_money"><br>
+        </article>
+        <article>
+            <label for="input_comment">What favorite would you like the product</label><br>
+            <textarea name="input_comment" id="input_comment" cols="30" rows="10"></textarea>
+        </article>
+        <article>
+            <input type="submit" value="Submit">
+        </article>
+
+    
+    
+</body>
+</html>

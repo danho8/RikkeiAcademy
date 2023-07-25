@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiring</title>
+    <style>
+        label{
+            color: rgb(172, 161, 148);
+            font-size: 16px;
+        }
+        input,textarea{
+            margin:5px 0 10px ;
+            width: 100%;
+        }
+        input{
+            height: 30px;
+            outline: none;
+            border-radius: 5px;
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+        }
+        body{
+            align-items: center;
+        }
+        form{
+            width: 50%;
+            margin: 0 auto;
+        }
+        input[type="submit"]{
+            background-color: rgb(172, 161, 148);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            width: 80px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(53, 47, 41);
+            font-family:Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tuyển dụng</h1>
+    </header>
+       <form action="hiring.php" method="post" enctype="multipart/form-data">
+        <label for="">Họ và tên: </label><br>
+        <input type="text" name="name" required> <br>
+        <label for="">Email:</label><br>
+        <input type="email" name="email"  required> <br>
+        <label for="">Số điện thoại: </label><br>
+        <input type="tel" name="phone"  required> <br>
+        <label for="">CV:</label><br>
+        <input type="file" name="cv" required> <br>
+        <label for="">Tin nhắn</label><br>
+        <textarea name="message" cols="30" rows="10" ></textarea> <br>
+        <input type="submit" value="Gửi">
+    </form>
+    
+</body>
+</html>
