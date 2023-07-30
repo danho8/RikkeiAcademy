@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Card</title>
+    <link rel="stylesheet" href="select_card.css">
+  </head>
+  <body>
+    <!-- Làm Select Card với hình ảnh có thể lấy trên internet -->
+    <div class="container">
+      <header>
+        <h1>Select Card</h1>
+      </header>
+      <article class="card-container">
+        <div class="card">
+          <img
+            src="https://adina.com.vn/wp-content/uploads/2016/07/mastercard_logo.png"
+            alt=""
+          />
+          <div class="icon-tick">
+            <img
+              class="icon-tick"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/BlueFlat_tick_icon.svg/512px-BlueFlat_tick_icon.svg.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://canhme.com/wp-content/uploads/2016/01/Paypal.png"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://luatvietan.vn/wp-content/uploads/2014/07/dich-vu-visa.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXW57urzjglzWfjya7Oo5vdh9uiHCIJCeu8-6069iLgy8SNiKgr7eKMTaHalVK_2pC9ao&usqp=CAU"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHf7f1T03f83C7bfxFNukJFjx890mb1EbFPBG2mkj8bcYU-0npXBFvGp_6FPOpeIE6IQ&usqp=CAU"
+            alt=""
+          />
+        </div>
+      </article>
+      <article>
+        <form action="">
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            name="card-number"
+            id="card-number"
+            placeholder="00392 322"
+          />
+          <div class="date-cv">
+            <div class="expiry">
+              <label for="expiry-date">Expiry Date</label><br />
+              <input
+                type="text"
+                name="expiry-date"
+                id="expiry-date"
+                placeholder="MM/YY"
+              />
+            </div>
+            <div class="cvv">
+              <label for="cvv">CVV</label><br />
+              <input type="text" name="cvv" id="cvv" placeholder="****" />
+            </div>
+          </div>
+          <input type="submit" value="Save" name="save" id="save" />
+        </form>
+      </article>
+    </div>
+  </body>
+</html>

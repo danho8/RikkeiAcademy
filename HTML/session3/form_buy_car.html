@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Car</title>
+    <style>
+        body{
+            margin-left: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Car Purchase Form</h1>
+    </header>
+    <form action="form_buy_car.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" ><br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" >
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" ><br><br>
+        <label for="choose_car">Choose Car</label>
+        <select name="choose_car" id="choose_car">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+        <label for="choose_color">Choose Color</label>
+        <select name="choose_color" id="choose_color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+        </select><br><br>
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" id="quantity" >
+        <br><br>
+        <label for="delivery_date">Delivery Date</label>
+        <input type="date" name="delivery_date" id="delivery_date" ><br><br>
+        <input type="submit" value="Submit">
+</body>
+</html>

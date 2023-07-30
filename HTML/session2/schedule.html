@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+
+    .after{
+        margin-left: 400px;
+    }
+    header{
+        text-align: center;
+    }
+    span{
+        display: inline-block;
+        color: blue;
+    }
+    table{
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    td,th{
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    h1{
+        color: blue;
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Thời khóa biểu</h1>
+    </header>
+    <article>
+        <span>Lớp:T0101</span>
+    <span class="after">Thời gian học: 8h00 - 10h00</span><br>
+    <span>Giảng viên Nguyễn Văn A</span>
+    <span class="after">Ngày học: Thứ 2 5 7</span><br>
+    <span>Phòng học: Phòng 1</span>
+
+</article>
+<table>
+ 
+    <!-- 6 cột  -->
+    <tr class="upTable">
+        <th colspan="5" bgcolor="white"></th>
+        <th colspan="2" bgcolor="yellow">Thứ 2</th>
+        <th colspan="2" bgcolor="yellow">Thứ 5</th>
+        <th colspan="2" bgcolor="yellow">Thứ 7</th>
+    </tr>
+    <tr class="downTable">
+        <th  colspan="1 " bgcolor="orange">Tuần</th>
+        <th  colspan="2" bgcolor="orange">Bắt đầu</th>
+        <th  colspan="2" bgcolor="orange">Kết thúc</th>
+        <th colspan="6" bgcolor="orange">Môn học</th>
+    </tr>
+    <!-- 4 hàng  -->
+    <tr>
+        <td colspan="1">1</td>
+        <td colspan="2">22/07/2023</td>
+        <td colspan="2">22/07/2024</td>
+        <td colspan="2">T1</td>
+        <td colspan="2">T2</td>
+        <td colspan="2">PHP</td>
+    </tr>
+    <tr>
+        <td colspan="1">1</td>
+        <td colspan="2">22/07/2023</td>
+        <td colspan="2">22/07/2024</td>
+        <td colspan="2">T1</td>
+        <td colspan="2">T2</td>
+        <td colspan="2">JavaScript</td>
+    </tr>
+    <tr>
+        <td colspan="1">1</td>
+        <td colspan="2">22/07/2023</td>
+        <td colspan="2">22/07/2024</td>
+        <td colspan="2">T1</td>
+        <td colspan="2">T2</td>
+        <td colspan="2">Java</td>
+    </tr>
+
+
+
+
+</table>
+</body>
+</html>

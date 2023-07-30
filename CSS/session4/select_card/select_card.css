@@ -1,0 +1,90 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+header h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin-top: 10px;
+}
+form input {
+    margin-bottom: 10px;
+}
+.card {
+    width: 80px;
+    height: 40px;
+    border: 1px solid rgb(177, 226, 241);
+    border-radius: 5px;
+    margin: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+}
+.icon-tick {
+    position: absolute;
+    margin-bottom: 57px;
+    margin-left: 19px;
+}
+.icon-tick img {
+    width: 20px;
+    height: 20px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid #a59e9e;
+}
+label {
+    font-weight: bold;
+    margin: 10px 0;
+}
+input {
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #70d9e0;
+    padding: 0 10px;
+}
+.date-cv {
+    display: flex;
+    justify-content: space-between;
+}
+#save {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #4391a5;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+a #expiry-date {
+    border-color: #a59e9e;
+    border-width: 1px;
+}
+#cvv {
+    border-color: #a59e9e;
+    border-width: 1px;
+}

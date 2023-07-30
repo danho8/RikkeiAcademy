@@ -1,0 +1,65 @@
+<!-- Tạo một form đăng ký học viên  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Member</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(248, 250, 162);
+    }
+    
+    h1 {
+      text-transform: uppercase;
+      color: #5555e9;
+      background-color: rgb(227, 245, 245);
+    }
+    label{
+        width: 100px !important;
+        color: blue;
+        display: inline-block;
+        gap: 10px;
+        margin: 10px 0;
+    }
+    input[type="submit"]{
+        margin-left: 105px;
+    }
+  </style>
+  <body>
+    <h1>Đăng ký học viên</h1>
+    <form method="POST">
+      <label for="yourname">Họ và tên</label>
+      <input
+        type="text"
+        name="yourname"
+        id="yourname"
+      />
+      <br />
+      <label for="birth">Ngày sinh</label>
+      <input type="datetime" name="birth" id="birth" />
+      <br />
+      <label for="gender">Giới tính</label>
+      <input type="radio" name="gender" id="gender" checked />Nam
+      <input type="radio" name="gender" id="gender" />Nữ
+      <br />
+      <label for="class">Lớp</label>
+      <select name="class" id="class">
+        <option value="select-class">---Chọn lớp---</option>
+        <option value="C2009L">C2009L</option>
+        <option value="C2009K">C2009K</option>
+        <option value="C2009M">C2009M</option>
+      </select>
+      <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="" />
+      <br />
+      <label for="phone">Số điện thoại</label>
+      <input type="tel" name="phone" id="phone" placeholder="" />
+      <br />
+      <input type="submit" value="Đăng kí" />
+      <input type="reset" value="Nhập lại" />
+    </form>
+  </body>
+</html>

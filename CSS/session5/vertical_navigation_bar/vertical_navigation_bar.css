@@ -1,0 +1,49 @@
+#vertical_navigation_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ccc;
+    animation-name: show_vertical_navigation_bar;
+    animation-duration: 1.5s;
+    padding-left: 20px;
+    display: none;
+}
+#vertical_navigation_bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+#vertical_navigation_bar ul li {
+    padding: 10px;
+}
+#buttonClick {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(243, 127, 127);
+    font-weight: 600;
+    padding: 5px 10px;
+}
+#buttonClick + #vertical_navigation_bar {
+    display: none;
+}
+#buttonClick:focus + #vertical_navigation_bar {
+    display: block;
+}
+
+.close-button {
+    font-size: large;
+    border: 0px;
+    background-color: #ccc;
+}
+
+/* dùng animation */
+@keyframes show_vertical_navigation_bar {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 0;
+    }
+}

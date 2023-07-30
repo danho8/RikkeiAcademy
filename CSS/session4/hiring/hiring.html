@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiring</title>
+    <link rel="stylesheet" href="hiring.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tuyển dụng</h1>
+    </header>
+    <form action="hiring.php" method="post" enctype="multipart/form-data">
+      <label for="">Họ và tên: </label><br />
+      <input type="text" name="name" required /> <br />
+      <label for="">Email:</label><br />
+      <input type="email" name="email" required /> <br />
+      <label for="">Số điện thoại: </label><br />
+      <input type="tel" name="phone" required /> <br />
+      <label for="">CV:</label><br />
+      <input type="file" name="cv" required /> <br />
+      <label for="">Tin nhắn</label><br />
+      <textarea name="message" cols="30" rows="10"></textarea> <br />
+      <input type="submit" value="Gửi" />
+    </form>
+  </body>
+</html>

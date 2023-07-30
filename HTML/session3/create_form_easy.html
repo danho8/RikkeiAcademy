@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body {
+        background-color: rgb(248, 250, 162);
+    }
+
+    h1 {
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+    }
+
+    form {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    input[type="submit"] {
+        font-weight: bold;
+        margin-left: 115px;
+    }
+
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+</style>
+
+<body>
+    <h1>Sở thích của bạn</h1>
+    <form action="" method="">
+        <label for="yourname">Họ và tên</label>
+        <input type="text" name="yourname" id="yourname" placeholder="Nhập họ và tên">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Nhập email">
+        <br>
+        <label for="sothich">Sở thích</label>
+        <input type="checkbox" name="sothich" id="sothich" value="Đọc sách">Đọc sách
+        <input type="checkbox" name="sothich" id="sothich" value="Chơi game">Chơi game
+        <input type="checkbox" name="sothich" id="sothich" value="Du lịch">Du lịch
+        <br>
+        <input type="submit" value="Gửi thông tin">
+        <input type="reset" value="Nhập lại">
+    </form>
+</body>
+
+</html>

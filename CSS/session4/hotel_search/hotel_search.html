@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="hotel_search.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <header>
+        <h1>Hotel Search</h1>
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="form">
+        <h3>Fine the Perfect Hotel for You</h3>
+        <form action="">
+          <label for="destination">Destination</label>
+          <input
+            type="text"
+            name="destination"
+            id="destination"
+            placeholder="Where are you going?"
+          />
+          <label for="check-in">Check-in</label>
+          <input type="date" name="check-in" id="check-in" />
+          <label for="check-out">Check-out</label>
+          <input type="date" name="check-out" id="check-out" />
+          <label for="guest">Guest</label>
+          <select name="guest" id="guest">
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guest</option>
+            <option value="3">3 Guest</option>
+            <option value="4">4 Guest</option>
+            <option value="5">5 Guest</option>
+            <option value="6">6 Guest</option>
+            <option value="7">7 Guest</option>
+            <option value="8">8 Guest</option>
+            <option value="9">9 Guest</option>
+            <option value="10">10 Guest</option>
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      <footer>
+        <p>© 2023 Hotel Search. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
