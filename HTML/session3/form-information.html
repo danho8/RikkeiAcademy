@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Information</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Thông tin sản phẩm</legend>
+                <label for="name_product">Tên sản phẩm</label>
+                <input type="text" id="name_product"/> 
+                <label for="numberic">Số lượng</label>
+                <input type="number" id="numberic" min="1" />
+            </fieldset>
+            <fieldset>
+                <legend>Thông tin giao hàng</legend>
+                <label for="name_user">Họ và tên</label>
+                <input type="text" id="name_user"/>
+                <label for="email_user">Email</label>
+                <input type="email" id="email_user" />
+                <label for="number_user" >Số điện thoại</label>
+                <input id="number_user" type="number" />
+                <label for="address_user">Địa chỉ</label>
+                <input type="text" id="address_user"/>
+            </fieldset>
+            <fieldset>
+                <legend>Thông tin thanh toán</legend>
+                <label for="payment">Phương thức thanh toán</label>
+                <input type="text" id="payment"/>
+            </fieldset>
+            <input type="submit" value="Đặt hàng">
+        </form>
+    </div>
+    
+</body>
+</html>
